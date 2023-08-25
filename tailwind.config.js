@@ -4,20 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#21092F",
-				"pri-med": "#8F8694",
-				"pri-light": "#DFDEE0",
-				error: "#FF5050",
-			},
-			backgroundImage: {
-				"gradient-pri":
-					"linear-gradient(90deg, rgba(99,72,254,1) 0%, rgba(97,5,149,1) 100%)",
-				"gradient-sec":
-					"linear-gradient(180deg, rgba(99,72,254,1) 0%, rgba(97,5,149,1) 100%)",
+				"canvas-pri": "#202733",
+				"canvas-sec": "#313A48",
+				"text-pri": "#CEE3E9",
+				"accent-pri": "#53FFAA",
 			},
 			fontFamily: {
-				fontPri: ["Space Grotesk", "sans-serif"],
-				fontSec: ["Inter", "sans-serif"],
+				fontPri: ["Manrope", "sans-serif"],
 			},
 			fontSize: {
 				bodyS: ".75rem",
