@@ -10,23 +10,92 @@
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
-			rel="stylesheet" />
+		<style>
+			@font-face {
+				font-family: "Manrope";
+				src: local("Manrope"),
+					url("./assets/fonts/Manrope-VariableFont_wght.woff2")
+						format("woff2");
+				font-display: swap;
+			}
+		</style>
+
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png" />
+			href="./assets/images/favicon-32x32.png" />
 
 		<link rel="stylesheet" href="./dist/output.css" />
 	</head>
 
-	<body>
-		<main>
-			<p class="bg-green-400">test</p>
+	<body class="font-fontPri bg-canvas-pri">
+		<main class="min-h-screen grid place-content-center">
+			<div
+				class="bg-canvas-sec max-w-[343px] drop-shadow tablet:max-w-[540px] min-h-[250px] rounded-lg mx-4 pt-12 px-6 tablet:px-8 text-center">
+				<h1
+					id="advice-title"
+					class="text-bodyS text-accent-pri font-extrabold uppercase mb-6"></h1>
+				<blockquote
+					id="advice-statement"
+					class="text-text-pri text-bodyL tablet:text-[28px] tablet:tracking-normal tablet: font-extrabold mb-6"></blockquote>
+				<svg
+					class="tablet:hidden mb-20"
+					width="295"
+					height="16"
+					xmlns="http://www.w3.org/2000/svg">
+					<g fill="none" fill-rule="evenodd">
+						<path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+						<g transform="translate(138)" fill="#CEE3E9">
+							<rect width="6" height="16" rx="3" />
+							<rect x="14" width="6" height="16" rx="3  " />
+						</g>
+					</g>
+				</svg>
+				<svg
+					class="hidden tablet:inline-block mb-20"
+					width="444"
+					height="16"
+					xmlns="http://www.w3.org/2000/svg">
+					<g fill="none" fill-rule="evenodd">
+						<path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
+						<g transform="translate(212)" fill="#CEE3E9">
+							<rect width="6" height="16" rx="3" />
+							<rect x="14" width="6" height="16" rx="3" />
+						</g>
+					</g>
+				</svg>
+				<div class="relative group bg-accent-pri rounded-full">
+					<div
+						id="generate-advice-icon"
+						class="bg-accent-pri cursor-pointer absolute group-hover:shadow-[0px_0px_50px_10px_#53FFAA] -top-[2rem] left-[calc(50%-2rem)] rounded-full h-[64px] w-[64px] flex items-center justify-center">
+						<svg
+							width="24"
+							height="24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+								fill="#202733" />
+						</svg>
+					</div>
+				</div>
+				<!-- <div class="relative group bg-accent-pri rounded-full">
+					<div
+						class="bg-accent-pri group-hover:blur-xl absolute -top-[2rem] left-[calc(50%-2rem)] rounded-full h-[64px] w-[64px]"></div>
+					<div
+						id="generate-advice-icon"
+						class="bg-accent-pri cursor-pointer absolute -top-[2rem] left-[calc(50%-2rem)] rounded-full h-[64px] w-[64px] flex items-center justify-center">
+						<svg
+							width="24"
+							height="24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+								fill="#202733" />
+						</svg>
+					</div>
+				</div> -->
+			</div>
 		</main>
 		<script src="main.js" async></script>
 		<!-- May use defer instead of async in script tag -->

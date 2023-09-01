@@ -13,27 +13,21 @@ module.exports = {
 				fontPri: ["Manrope", "sans-serif"],
 			},
 			fontSize: {
-				bodyS: ".75rem",
-				bodyM: [
-					".75rem",
+				bodyS: [
+					".6875rem",
 					{
-						letterSpacing: "2px",
+						letterSpacing: "3.46px",
 					},
 				],
 				bodyL: [
-					".875rem",
+					"1.5rem",
 					{
-						letterSpacing: "2px",
+						letterSpacing: "-.26px",
 					},
 				],
-				hdgL: "1.125rem",
-				hdgXl: [
-					"1.625rem",
-					{
-						letterSpacing: "3.42px",
-					},
-				],
-				bodyPri: ["18px", "26px"],
+			},
+			screens: {
+				tablet: "572px",
 			},
 		},
 	},
