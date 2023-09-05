@@ -587,6 +587,14 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-\[64px\] {
   width: 64px;
 }
@@ -615,10 +623,6 @@ video {
   justify-content: center;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -640,28 +644,6 @@ video {
 .bg-canvas-sec {
   --tw-bg-opacity: 1;
   background-color: rgb(49 58 72 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-inherit {
-  background-color: inherit;
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
-.bg-purple-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
-}
-
-.bg-none {
-  background-image: none;
 }
 
 .px-6 {
@@ -717,12 +699,6 @@ video {
 .group:hover .group-hover\:shadow-\[0px_0px_50px_10px_\#53FFAA\] {
   --tw-shadow: 0px 0px 50px 10px #53FFAA;
   --tw-shadow-colored: 0px 0px 50px 10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.group:hover .group-hover\:shadow-\[0px_0px_50px_0px_\#53FFAA\] {
-  --tw-shadow: 0px 0px 50px 0px #53FFAA;
-  --tw-shadow-colored: 0px 0px 50px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
